@@ -11,7 +11,7 @@ const apiClient = axios.create({
 
 export default {
   listeDesBiens() {
-    return apiClient.get('/bien')
+    return apiClient.get('/bien?perPage=20?page=1')
   },
   filtrerListeDesBiens(payload){
     console.log("verif dans service", payload);
